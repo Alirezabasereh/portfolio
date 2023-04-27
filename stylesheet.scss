@@ -107,7 +107,7 @@ body {
                             transition: 0.5s;
 
                             &:hover {
-                                scale: 1.04;
+                                transform: scale(1.04);
                             }
                         }
                     }
@@ -347,7 +347,7 @@ body {
 
 
                                     &:hover {
-                                        scale: 1.1;
+                                        transform: scale(1.1);
                                     }
 
                                     a {
@@ -390,7 +390,7 @@ body {
                                     transition: 0.4s;
 
                                     &:hover {
-                                        scale: 1.1;
+                                        transform: scale(1.1);
                                     }
 
                                     a {
@@ -430,7 +430,7 @@ body {
                                     transition: 0.4s;
 
                                     &:hover {
-                                        scale: 1.1;
+                                        transform: scale(1.1);
                                     }
 
                                     a {
@@ -473,7 +473,7 @@ body {
                                 transition: 0.5s;
 
                                 &:hover {
-                                    scale: 1.04;
+                                    transform: scale(1.04);
                                 }
 
                                 a {
@@ -499,7 +499,7 @@ body {
                                 transition: 0.5s;
 
                                 &:hover {
-                                    scale: 1.04;
+                                    transform: scale(1.04);
                                 }
 
                                 a {
@@ -575,7 +575,7 @@ body {
                         transition: 1s;
 
                         &:hover>img {
-                            scale: 1.4;
+                            transform: scale(1.4);
                         }
 
                         &:hover {
@@ -611,16 +611,16 @@ body {
 
 
         .aboutme {
-            margin-top: 100px;
+            margin-top: 20px;
 
             .aboutmetext {
-                height: 30px;
                 color: rgb(0, 0, 0);
                 text-transform: capitalize;
-                font-size: 20px;
+                font-size: 60px;
                 margin: 20px 0px !important;
                 justify-content: flex-start;
                 align-items: center;
+                font-family: 'Dancing Script', cursive;
             }
 
 
@@ -655,11 +655,6 @@ body {
                         border-radius: 20px;
                         width: 280px;
                         height: 280px;
-
-
-                        @media screen and (max-width:380px) {
-                            width: 250px;
-                        }
                     }
                 }
 
@@ -669,7 +664,6 @@ body {
                     text-transform: capitalize;
 
                     div {
-                        padding-top: 120px;
                         position: relative;
                         min-height: 300px;
 
@@ -679,22 +673,42 @@ body {
                             right: 20px;
                             font-size: 120px;
                             color: rgba(182, 182, 182, 0.211);
+
+                            @media screen and (max-width:576px) {
+                                font-size: 80px;
+                            }
+                        }
+
+                        >span:nth-of-type(1) {
+                            display: flex;
+                        }
+
+                        >span:nth-of-type(2) {
+                            display: flex;
+                        }
+
+                        >span:nth-of-type(3) {
+                            display: flex;
+                        }
+
+                        h2 {
+                            padding-top: 20px;
+                            text-transform: capitalize;
+                            font-size: 26px;
+                            color: #232323;
+                        }
+
+                        p {
+                            text-transform: capitalize;
+                            color: rgb(104, 104, 104);
+                            font-size: 16px;
+                            display: flex;
+                            margin-top: 20px;
                         }
                     }
 
-                    h2 {
-                        text-transform: capitalize;
-                        font-size: 26px;
-                        color: #232323;
-                    }
 
-                    p {
-                        text-transform: capitalize;
-                        color: rgb(104, 104, 104);
-                        font-size: 16px;
-                        display: flex;
-                        margin-top: 20px;
-                    }
+
                 }
 
                 .grid3 {
@@ -709,6 +723,10 @@ body {
                             right: 20px;
                             font-size: 120px;
                             color: rgba(182, 182, 182, 0.211);
+
+                            @media screen and (max-width:576px) {
+                                font-size: 80px;
+                            }
                         }
 
                         h2 {
@@ -754,6 +772,10 @@ body {
                             right: 20px;
                             font-size: 120px;
                             color: rgba(182, 182, 182, 0.211);
+
+                            @media screen and (max-width:576px) {
+                                font-size: 80px;
+                            }
                         }
 
                         h2 {
@@ -783,6 +805,122 @@ body {
                             color: rgb(104, 104, 104);
                             font-size: 14px;
                             display: flex;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .skills {
+            .myskillstext {
+                color: rgb(0, 0, 0);
+                text-transform: capitalize;
+                font-size: 60px;
+                margin: 20px 0px !important;
+                justify-content: flex-start;
+                align-items: center;
+                font-family: 'Dancing Script', cursive;
+            }
+
+            .skills-item {
+                margin-top: 30px;
+                padding: 10px;
+
+                >span:nth-of-type(1) {
+                    display: flex;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+
+                .row {
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    >div:nth-of-type(1) {
+
+                        >div:nth-of-type(1) {
+                            background-color: rgba(255, 255, 255, 0.384);
+                            border-radius: 50%;
+                            width: 80px;
+                            height: 80px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    >div:nth-of-type(2){
+                        height: 4px;
+                        background-color: rgb(208, 208, 208);
+                        position: relative;
+                        border-radius: 10px;
+                        overflow: hidden;
+                    }
+
+                    .htmlcss{
+                        &::after{
+                            content: "";
+                            background-color: rgb(84, 152, 255);
+                            width: 96%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+                    .javascript{
+                        &::after{
+                            content: "";
+                            background-color: rgb(84, 152, 255);
+                            width: 90%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+                    .sass{
+                        &::after{
+                            content: "";
+                            background-color: rgb(84, 152, 255);
+                            width: 92%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+                    .bootstrap{
+                        &::after{
+                            content: "";
+                            background-color: rgb(84, 152, 255);
+                            width: 89%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+                    .tailwind{
+                        &::after{
+                            content: "";
+                            background-color: rgb(84, 152, 255);
+                            width: 80%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
                         }
                     }
                 }
