@@ -238,6 +238,7 @@ body main .hero .row .typing .social {
 }
 body main .hero .row .typing .social .row .instagram > div:hover,
 body main .hero .row .typing .social .row .linkedin > div:hover,
+body main .hero .row .typing .social .row .github > div:hover,
 body main .hero .row .typing .social .row .telegram > div:hover {
   animation: social forwards 2s ease;
 }
@@ -333,6 +334,37 @@ body main .hero .row .typing .social .row .telegram div a i {
   align-items: center;
   font-size: 20px;
   color: #0088cc;
+}
+body main .hero .row .typing .social .github div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.295);
+  cursor: pointer;
+  transition: 0.4s;
+}
+body main .hero .row .typing .social .github div:hover {
+  transform: scale(1.1);
+}
+body main .hero .row .typing .social .github div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.737254902);
+  text-decoration: none;
+}
+body main .hero .row .typing .social .github div a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
 body main .hero .row .typing .project-talk {
   height: 50px;
@@ -430,7 +462,7 @@ body main .hero .row .myimage figure img {
   transition: 1s;
 }
 body main .aboutme {
-  margin-top: 20px;
+  margin-top: 120px;
 }
 body main .aboutme .aboutmetext {
   color: rgb(0, 0, 0);
@@ -440,13 +472,15 @@ body main .aboutme .aboutmetext {
   justify-content: flex-start;
   align-items: center;
   font-family: "Dancing Script", cursive;
+  padding-top: 60px !important;
 }
 body main .aboutme .row .grid1 > div,
 body main .aboutme .row .grid2 > div,
 body main .aboutme .row .grid3 > div,
 body main .aboutme .row .grid4 > div {
-  background-color: rgba(255, 255, 255, 0.451);
+  background-color: rgba(255, 255, 255, 0.538);
   border-radius: 20px;
+  border: 1px solid rgb(216, 215, 215);
   padding: 20px;
 }
 body main .aboutme .row .grid1 {
@@ -597,6 +631,9 @@ body main .aboutme .row .grid4 div > span:nth-of-type(3) {
   font-size: 14px;
   display: flex;
 }
+body main .skills {
+  margin-top: 120px;
+}
 body main .skills .myskillstext {
   color: rgb(0, 0, 0);
   text-transform: capitalize;
@@ -605,14 +642,23 @@ body main .skills .myskillstext {
   justify-content: flex-start;
   align-items: center;
   font-family: "Dancing Script", cursive;
+  padding-top: 60px !important;
 }
 body main .skills .skills-item {
   margin-top: 30px;
   padding: 10px;
+  background-color: rgba(255, 255, 255, 0.538);
+  border-radius: 20px;
+  border: 1px solid rgb(216, 215, 215);
+  transition: 0.5s;
+  cursor: pointer;
+}
+body main .skills .skills-item:hover {
+  transform: scale(1.04);
 }
 body main .skills .skills-item > span:nth-of-type(1) {
   display: flex;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -621,7 +667,7 @@ body main .skills .skills-item .row {
   align-items: center;
 }
 body main .skills .skills-item .row > div:nth-of-type(1) > div:nth-of-type(1) {
-  background-color: rgba(255, 255, 255, 0.384);
+  background-color: rgba(199, 229, 250, 0.384);
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -684,4 +730,390 @@ body main .skills .skills-item .row .tailwind::after {
   position: absolute;
   top: 0;
   left: 0;
+}
+body main .skills .skills-item .row .reactjs::after {
+  content: "";
+  background-color: rgb(84, 152, 255);
+  width: 89%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body main .portfolio {
+  margin-top: 120px;
+}
+body main .portfolio .portfoliotext {
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  font-size: 60px;
+  margin: 20px 0px !important;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+  padding-top: 60px !important;
+}
+body main .portfolio .maincard > div {
+  border-radius: 20px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgb(216, 215, 215);
+  margin: 25px;
+}
+body main .portfolio .maincard > div > div:nth-of-type(1) img {
+  min-width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+body main .portfolio .maincard > div span {
+  margin: 10px 0px;
+  display: flex;
+  font-size: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) {
+  height: 40px;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgb(216, 215, 215);
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) a:hover {
+  background-color: #000000;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) a:hover > i {
+  color: white;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) a i {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  transition: 0.5s;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgb(216, 215, 215);
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) a:hover {
+  background-color: #000000;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) a:hover > i {
+  color: white;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) a i {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  transition: 0.5s;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .portfolio .maincard > div > div:nth-of-type(2) > div:nth-of-type(2) a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  text-transform: capitalize;
+  background-color: rgba(255, 255, 255, 0.522);
+  border-radius: 6px;
+  border: 1px solid rgb(216, 215, 215);
+  font-weight: 100;
+}
+body main .contactme {
+  margin-top: 120px;
+}
+body main .contactme .contactmetext {
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  font-size: 60px;
+  margin: 20px 0px !important;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+  padding-top: 60px !important;
+}
+body main .contactme .row .typing {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: 20px;
+}
+body main .contactme .row .typing span {
+  text-transform: capitalize;
+}
+body main .contactme .row .typing .social {
+  height: 80px;
+  margin-top: 60px !important;
+  margin-bottom: 50px !important;
+}
+@keyframes social {
+  from {
+    box-shadow: 0px 0px 0px 0px white;
+  }
+  to {
+    box-shadow: 0px 0px 0px 20px rgba(255, 255, 255, 0);
+  }
+}
+body main .contactme .row .typing .social .row .instagram > div:hover,
+body main .contactme .row .typing .social .row .linkedin > div:hover,
+body main .contactme .row .typing .social .row .github > div:hover,
+body main .contactme .row .typing .social .row .telegram > div:hover {
+  animation: social forwards 2s ease;
+}
+body main .contactme .row .typing .social .row .instagram div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.295);
+  cursor: pointer;
+  transition: 0.4s;
+}
+body main .contactme .row .typing .social .row .instagram div:hover {
+  transform: scale(1.1);
+}
+body main .contactme .row .typing .social .row .instagram div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.737254902);
+  text-decoration: none;
+}
+body main .contactme .row .typing .social .row .instagram div a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(255, 192, 67);
+}
+body main .contactme .row .typing .social .row .linkedin div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.295);
+  cursor: pointer;
+  transition: 0.4s;
+}
+body main .contactme .row .typing .social .row .linkedin div:hover {
+  transform: scale(1.1);
+}
+body main .contactme .row .typing .social .row .linkedin div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.737254902);
+  text-decoration: none;
+}
+body main .contactme .row .typing .social .row .linkedin div a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #0072b1;
+}
+body main .contactme .row .typing .social .row .telegram div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.295);
+  cursor: pointer;
+  transition: 0.4s;
+}
+body main .contactme .row .typing .social .row .telegram div:hover {
+  transform: scale(1.1);
+}
+body main .contactme .row .typing .social .row .telegram div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.737254902);
+  text-decoration: none;
+}
+body main .contactme .row .typing .social .row .telegram div a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #0088cc;
+}
+body main .contactme .row .typing .social .github div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.295);
+  cursor: pointer;
+  transition: 0.4s;
+}
+body main .contactme .row .typing .social .github div:hover {
+  transform: scale(1.1);
+}
+body main .contactme .row .typing .social .github div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.737254902);
+  text-decoration: none;
+}
+body main .contactme .row .typing .social .github div a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+body main .contactme .row .typing .contacting {
+  border-left: 5px solid rgb(0, 200, 255);
+  padding-left: 10px;
+  margin: 50px 0px;
+}
+body main .contactme .row .typing .contacting a {
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  margin: 5px 0px;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+body main .contactme .row .typing .contacting a:hover::after {
+  width: 100%;
+}
+body main .contactme .row .typing .contacting a::after {
+  content: "";
+  background-color: #000000;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.4s;
+}
+body main .contactme .row > .forms {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+}
+body main .contactme .row > .forms form {
+  width: 100%;
+}
+body main .contactme .row > .forms form input {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(216, 215, 215);
+  padding-left: 5px;
+  margin: 30px 0px;
+}
+body main .contactme .row > .forms form input::-moz-placeholder {
+  text-transform: capitalize;
+}
+body main .contactme .row > .forms form input::placeholder {
+  text-transform: capitalize;
+}
+body main .contactme .row > .forms form textarea {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid rgb(216, 215, 215);
+  padding-left: 5px;
+  margin: 30px 0px;
+}
+body main .contactme .row > .forms form textarea::-moz-placeholder {
+  text-transform: capitalize;
+}
+body main .contactme .row > .forms form textarea::placeholder {
+  text-transform: capitalize;
+}
+body main .contactme .row > .forms form input[type=submit] {
+  width: 50%;
+  margin: 30px auto;
+  display: flex;
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+}
+body main .copyrights {
+  margin: 120px 0px !important;
+  padding-bottom: 50px;
+}
+body main .copyrights div span {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=stylesheet.css.map */
