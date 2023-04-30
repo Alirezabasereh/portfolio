@@ -63,6 +63,20 @@ body main header .main-header .row .menu ul li a {
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 100;
+  position: relative;
+}
+body main header .main-header .row .menu ul li a:hover::before {
+  height: 10px;
+}
+body main header .main-header .row .menu ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 115, 177, 0.3843137255);
+  width: 100%;
+  height: 0;
+  transition: 0.2s;
 }
 body main header .main-header .row .hire {
   display: flex;
@@ -474,6 +488,11 @@ body main .aboutme .aboutmetext {
   font-family: "Dancing Script", cursive;
   padding-top: 60px !important;
 }
+@media screen and (max-width: 424px) {
+  body main .aboutme .aboutmetext {
+    font-size: 40px;
+  }
+}
 body main .aboutme .row .grid1 > div,
 body main .aboutme .row .grid2 > div,
 body main .aboutme .row .grid3 > div,
@@ -644,6 +663,11 @@ body main .skills .myskillstext {
   font-family: "Dancing Script", cursive;
   padding-top: 60px !important;
 }
+@media screen and (max-width: 424px) {
+  body main .skills .myskillstext {
+    font-size: 40px;
+  }
+}
 body main .skills .skills-item {
   margin-top: 30px;
   padding: 10px;
@@ -675,6 +699,12 @@ body main .skills .skills-item .row > div:nth-of-type(1) > div:nth-of-type(1) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 380px) {
+  body main .skills .skills-item .row > div:nth-of-type(1) > div:nth-of-type(1) {
+    width: 70px !important;
+    height: 70px !important;
+  }
 }
 body main .skills .skills-item .row > div:nth-of-type(1) > div:nth-of-type(1) img {
   width: 80%;
@@ -740,6 +770,16 @@ body main .skills .skills-item .row .reactjs::after {
   top: 0;
   left: 0;
 }
+body main .skills .skills-item .row > div:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 380px) {
+  body main .skills .skills-item .row > div:nth-of-type(3) {
+    font-size: 14px;
+  }
+}
 body main .portfolio {
   margin-top: 120px;
 }
@@ -752,6 +792,37 @@ body main .portfolio .portfoliotext {
   align-items: center;
   font-family: "Dancing Script", cursive;
   padding-top: 60px !important;
+}
+@media screen and (max-width: 424px) {
+  body main .portfolio .portfoliotext > div:nth-of-type(1) {
+    font-size: 40px;
+  }
+}
+body main .portfolio .portfoliotext > div:nth-of-type(2) {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  height: 30px;
+}
+@media screen and (min-width: 992px) {
+  body main .portfolio .portfoliotext > div:nth-of-type(2) {
+    transform: translateX(-32px);
+  }
+}
+body main .portfolio .portfoliotext > div:nth-of-type(2) a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 415px) {
+  body main .portfolio .portfoliotext > div:nth-of-type(2) a {
+    font-size: 12px !important;
+  }
 }
 body main .portfolio .maincard > div {
   border-radius: 20px;
@@ -766,6 +837,11 @@ body main .portfolio .maincard > div > div:nth-of-type(1) img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+@media screen and (max-width: 380px) {
+  body main .portfolio .maincard > div > div:nth-of-type(1) img {
+    height: 180px !important;
+  }
 }
 body main .portfolio .maincard > div span {
   margin: 10px 0px;
@@ -877,6 +953,11 @@ body main .contactme .contactmetext {
   align-items: center;
   font-family: "Dancing Script", cursive;
   padding-top: 60px !important;
+}
+@media screen and (max-width: 424px) {
+  body main .contactme .contactmetext {
+    font-size: 40px;
+  }
 }
 body main .contactme .row .typing {
   background-color: rgba(255, 255, 255, 0.4);
@@ -1077,6 +1158,12 @@ body main .contactme .row > .forms form input {
   border: 1px solid rgb(216, 215, 215);
   padding-left: 5px;
   margin: 30px 0px;
+  transition: 0.5s;
+  border-width: 2px;
+  outline: none;
+}
+body main .contactme .row > .forms form input:focus {
+  border: 2px solid #34aae9;
 }
 body main .contactme .row > .forms form input::-moz-placeholder {
   text-transform: capitalize;
@@ -1092,6 +1179,12 @@ body main .contactme .row > .forms form textarea {
   border: 1px solid rgb(216, 215, 215);
   padding-left: 5px;
   margin: 30px 0px;
+  transition: 0.5s;
+  border-width: 2px;
+  outline: none;
+}
+body main .contactme .row > .forms form textarea:focus {
+  border: 2px solid #34aae9;
 }
 body main .contactme .row > .forms form textarea::-moz-placeholder {
   text-transform: capitalize;
@@ -1106,6 +1199,11 @@ body main .contactme .row > .forms form input[type=submit] {
   text-transform: capitalize;
   justify-content: center;
   align-items: center;
+  background-color: rgba(174, 237, 255, 0.79);
+  transition: 0.5s;
+}
+body main .contactme .row > .forms form input[type=submit]:hover {
+  transform: scale(0.96);
 }
 body main .copyrights {
   margin: 120px 0px !important;
@@ -1116,4 +1214,5 @@ body main .copyrights div span {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=stylesheet.css.map */
